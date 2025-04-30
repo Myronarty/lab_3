@@ -24,10 +24,6 @@ jobs:
       - name: Run tests
         run: dotnet test --logger "trx;LogFileName=test_results.trx" --results-directory results
 
-      - name: Check contents of results
-        run: ls -la results
-
-
       - name: Upload test results
         uses: actions/upload-artifact@v4
         with:
