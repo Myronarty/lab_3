@@ -16,7 +16,7 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore TestLab3/TestLab3.csproj
+        run: dotnet restore TestLab2/TestLab3.csproj
 
       - name: Build
         run: dotnet build TestLab3/TestLab3.csproj --no-restore --configuration Release
