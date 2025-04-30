@@ -22,7 +22,7 @@ jobs:
         run: dotnet build TestLab2/TestLab3.csproj --no-restore --configuration Release
 
       - name: Run tests
-        run: dotnet test --no-build --logger "trx;LogFileName=test_results.trx" --results-directory results
+        run: dotnet test --logger "trx;LogFileName=test_results.trx" --results-directory results
 
       - name: Upload test results
         uses: actions/upload-artifact@v4
